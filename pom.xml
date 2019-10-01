@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.org.slacklife</groupId>
+    <artifactId>kafka-storm-redis</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+
+    <properties>
+        <java.version>1.10</java.version>
+        <logback.version>1.1.7</logback.version>
+        <slf4j.version>1.7.21</slf4j.version>
+        <storm.version>2.0.0</storm.version>
+        <storm.kafka.version>2.0.0</storm.kafka.version>
+
+        <wiremock.version>2.1.10</wiremock.version>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.apache.storm</groupId>
+            <artifactId>storm-core</artifactId>
+            <version>${storm.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.storm</groupId>
+            <artifactId>storm-client</artifactId>
+            <version>${storm.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.storm</groupId>
+            <artifactId>storm-kafka-client</artifactId>
+            <version>${storm.kafka.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.storm</groupId>
+            <artifactId>storm-kafka-monitor</artifactId>
+            <version>${storm.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.storm</groupId>
+            <artifactId>storm-redis</artifactId>
+            <version>${storm.version}</version>
+        </dependency>
+    </dependencies>
+
+
+    <inceptionYear>2019</inceptionYear>
+
+    <developers>
+        <developer>
+            <id>saurabh-slacklife</id>
+            <name>Saurabh Saxena</name>
+            <email>sau.5rabh88@gmail.com</email>
+            <roles>
+                <role>owner</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git@github.com:saurabh-slacklife/kafka-storm-redis.git</connection>
+        <developerConnection>scm:git:git@github.com:saurabh-slacklife/kafka-storm-redis.git</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://github.com/saurabh-slacklife/kafka-storm-redis.git</url>
+    </scm>
+
+</project>
